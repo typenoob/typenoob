@@ -7,4 +7,4 @@
 - 💬 Ask me about anything.
 - 📫 How to reach me: chenyutao0706@gmail.com
 - 😄 Pronouns: ♂
-- ⚡ Fun fact: The Legend of Zelda：Breath of the Wild will be released in 2023 spr.
+- ⚡ Fun fact: The Legend of Zelda：Breath of the Wild will be released in 5/12/2023.
