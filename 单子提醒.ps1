@@ -5,7 +5,7 @@ if ($send) {
     $body = @{
         'msgtype' = "text"
         'text' = @{
-            'content' = "请注意单子状态"
+            'content' = $text
             'mention_list' = '@all'
         }
     } | ConvertTo-Json
@@ -15,5 +15,5 @@ if ($send) {
     }
     $url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=fe0bd189-2c23-4034-9cef-64c6e890b84c"
     $encodedContent = [System.Text.Encoding]::UTF8.GetBytes($body)
-   Invoke-RestMethod -Method 'Post' -Uri "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=da7aa04d-19e6-4813-87d9-87178bc71220" -Body ($encodedContent) -Headers $headers
+   Invoke-RestMethod -Method 'Post' -Uri $url -Body ($encodedContent) -Headers $headers
 }
