@@ -5,7 +5,7 @@ if ($send) {
     $body = @{
         'msgtype' = "text"
         'text' = @{
-            'content' = "��ע�ⵥ��״̬"
+            'content' = "请注意单子状态"
             'mention_list' = '@all'
         }
     } | ConvertTo-Json
