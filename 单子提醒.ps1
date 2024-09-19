@@ -5,7 +5,7 @@ if ($send) {
     $body = @{
         'msgtype' = "text"
         'text' = @{
-            'content' = $text
+            'content' = $env:text
             'mention_list' = '@all'
         }
     } | ConvertTo-Json
@@ -13,7 +13,7 @@ if ($send) {
         'Content-Type' = "application/json"
         'charset' = "ansi"
     }
-    $url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=fe0bd189-2c23-4034-9cef-64c6e890b84c"
+    $url = $env:url
     $encodedContent = [System.Text.Encoding]::UTF8.GetBytes($body)
    Invoke-RestMethod -Method 'Post' -Uri $url -Body ($encodedContent) -Headers $headers
 }
