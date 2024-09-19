@@ -12,10 +12,6 @@ jobs:
       text: ${{ secrets.TEXT }}
     runs-on: windows-latest
     steps:
-      - name: 设置环境变量
-        run: |
-          $text = ${{ secrets.TEXT }}
-          $url = ${{ secrets.URL }} 
       - uses: actions/checkout@v4
       - name: Build
         run: .\单子提醒.ps1
