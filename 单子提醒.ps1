@@ -6,7 +6,7 @@ if ($send) {
         'msgtype' = "text"
         'text' = @{
             'content' = $env:text
-            'mention_list' = '@all'
+            'mentioned_list' = '@all'
         }
     } | ConvertTo-Json
     $headers = @{
