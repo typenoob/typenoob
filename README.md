@@ -25,3 +25,5 @@ RNN NLP Transformer softmax
 
 [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=sggzqgc6si027y7iohmu5d4w1&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false)](https://github.com/kittinan/spotify-github-profile)
 
+Looking for a cooool job now. You can contact me on phone/wechat 19975266441 
+
